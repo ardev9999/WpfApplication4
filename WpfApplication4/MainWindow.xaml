@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid Margin="0,0,0,30">
+        
+        <Menu VerticalAlignment="Top" Margin="0,10" HorizontalAlignment="Center">
+            <MenuItem Header="Adatgyűjtő előállítása" Margin="10,0" FontSize="14" FontWeight="Bold"></MenuItem>
+            <MenuItem Header="Óraállítások betöltése" Margin="10,0" FontSize="14" FontWeight="Bold"></MenuItem>
+        </Menu>
+        <WrapPanel Orientation="Vertical" Width="350" Height="250" VerticalAlignment="Top">
+            <WrapPanel Orientation="Vertical" Margin="0,50,0,0">
+                <Label Content="Óra típusa:"/>
+                <Label Content="Bázis dátum:"/>
+                <Label Content="Év:"/>
+                <Label Content="Hó:"/>
+                <Label Content="Időszak tól:"/>
+                <Label Content="Időszak ig:"/>
+
+            </WrapPanel>
+            <WrapPanel Margin="35,50,0,0" Orientation="Vertical" Width="239" Height="215">
+                <ComboBox Width="148" Height="22" HorizontalAlignment="Left">
+                    <ComboBoxItem Content="ComboBox Item #1"/>
+                    <ComboBoxItem IsSelected="True" Content="ComboBox Item #2"/>
+                    <ComboBoxItem Content="ComboBox Item #3"/>
+                </ComboBox>
+                <DatePicker Height="26" Width="148" HorizontalAlignment="Left"/>
+                <TextBox Height="22" Width="77" HorizontalAlignment="Left" Margin="0,2" />
+                <TextBox Height="22" Width="32" HorizontalAlignment="Left" Margin="0,2"/>
+                <TextBox Height="22" Margin="0,2" Width="148" HorizontalAlignment="Left" />
+                <TextBox Height="22" Margin="0,2,0,20" Width="148" HorizontalAlignment="Left" />
+
+                <ProgressBar Minimum="0" Maximum="100" Value="70" Height="20" Width="239" />
+
+            </WrapPanel>
+        </WrapPanel>
+        <Grid Height="25" Width="250" >
+        </Grid>
+
+    </Grid>
+</Window>
